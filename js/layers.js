@@ -24,5 +24,12 @@ addLayer("n", {
     hotkeys: [
         {key: "n", description: "N: Reset for nothing", onPress(){if (canReset(this.layer)) doReset(this.layer)}},
     ],
+    upgrades: {
+        11: {
+            title: "Less Stuff",
+            description: "Doubles your void gain.",
+            cost: new Decimal(3),
+        },
+    },
     layerShown(){return true}
 })
